@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-white/20;
+  }
+  
+  body {
+    @apply bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 min-h-screen;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer components {
+  .note-card {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 shadow-2xl hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] hover:bg-white/10;
+  }
+  
+  .note-card.trending {
+    @apply ring-2 ring-accent-500/50 animate-glow bg-gradient-to-br from-accent-500/5 to-primary-500/5;
+  }
+  
+  .note-card.popular {
+    @apply ring-2 ring-primary-500/50 bg-gradient-to-br from-primary-500/5 to-accent-500/5;
+  }
+  
+  .btn-primary {
+    @apply bg-gradient-to-r from-primary-500 via-primary-600 to-primary-700 hover:from-primary-600 hover:via-primary-700 hover:to-primary-700 text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-xl hover:shadow-2xl hover:shadow-primary-500/25;
+  }
+  
+  .btn-secondary {
+    @apply bg-white/5 hover:bg-white/10 text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 border border-white/20 hover:border-white/40 backdrop-blur-sm hover:shadow-lg;
+  }
+  
+  .input-field {
+    @apply w-full bg-white/5 border border-white/20 rounded-xl px-4 py-4 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-primary-500/50 focus:border-primary-500/50 backdrop-blur-sm transition-all duration-300 hover:bg-white/10;
+  }
+  
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl;
+  }
+}

@@ -1,0 +1,16 @@
+[package]
+name = "shelby_notes"
+version = "1.0.0"
+authors = []
+
+[addresses]
+shelby_notes = "0x05bdead0d29dde8e07f2d859341ed05badd00aa62a1364f521f80864b133b09a"
+
+[dev-addresses]
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-framework.git"
+rev = "mainnet"
+subdir = "aptos-framework"
+
+[dev-dependencies]

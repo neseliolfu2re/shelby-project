@@ -1,0 +1,12 @@
+api_key: "aptoslabs_FiexjvbkzHy_FG9xpvvmLXUU3asUSw2EDrcszDUuNZ4cb"
+contexts:
+  local:
+    rpc_url: "http://localhost:8080"
+    network: "local"
+  shelbynet:
+    rpc_url: "https://shelbynet.shelby.xyz"
+    network: "shelbynet"
+  mainnet:
+    rpc_url: "https://mainnet.shelby.xyz"
+    network: "mainnet"
+default_context: "shelbynet"
